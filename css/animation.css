@@ -1,0 +1,66 @@
+@keyframes opacidadeH1 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes transicaoH1 {
+    0% {
+        background-color: transparent;
+        transform: translateX(-500px);
+    }
+
+    30% {
+        transform: rotate(100deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    85% {
+        transform: translateX(20px);
+    }
+
+    100% {}
+}
+
+.frete {
+    width: 100vw;
+    background-color: #f50808;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(211, 248, 46);
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 3px;
+    z-index: 9999;
+}
+
+@keyframes crescendoZap {
+    0% {  
+        width: 50px;      
+    }
+
+    100% {
+        width: 80px;
+        opacity: 0.9;
+    }
+}
+
+.zap {
+    width: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    animation-name: crescendoZap;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
